@@ -1,25 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Heheh. You're in a new journey now!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const myElement = <h1>I love JSX!</h1>;
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
